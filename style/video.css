@@ -175,3 +175,44 @@ h1 {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== MENU BURGER (mobile uniquement) ===== */
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .burger {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2rem 0;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
