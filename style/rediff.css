@@ -247,3 +247,37 @@ h1 {
         display: none;
     }
 }
+.twitch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 12px;
+  padding: 12px 20px;
+
+  background-color: #9146FF; /* Violet Twitch */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(145, 70, 255, 0.35);
+
+  transition: all 0.25s ease;
+}
+
+.twitch-btn i {
+  font-size: 20px;
+}
+
+.twitch-btn:hover {
+  background-color: #772ce8;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(145, 70, 255, 0.5);
+}
+
+.twitch-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 15px rgba(145, 70, 255, 0.35);
+}
