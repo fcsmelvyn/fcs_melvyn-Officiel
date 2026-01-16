@@ -136,13 +136,14 @@ nav a:hover {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 5rem 2rem 3rem 2rem;
 }
 
 h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-align: center;
+    margin-top: 3rem;
 }
 
 .subtitle {
@@ -249,36 +250,79 @@ h1 {
 }
 
 .twitch-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 
-  margin-top: 12px;
-  padding: 12px 20px;
+    margin-top: 12px;
+    padding: 12px 20px;
 
-  background-color: #9146FF; /* Violet Twitch */
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
+    background-color: #9146FF;
+    /* Violet Twitch */
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
 
-  border-radius: 8px;
-  box-shadow: 0 6px 15px rgba(145, 70, 255, 0.35);
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(145, 70, 255, 0.35);
 
-  transition: all 0.25s ease;
+    transition: all 0.25s ease;
 }
 
 .twitch-btn i {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .twitch-btn:hover {
-  background-color: #772ce8;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(145, 70, 255, 0.5);
+    background-color: #772ce8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(145, 70, 255, 0.5);
 }
 
 .twitch-btn:active {
-  transform: translateY(0);
-  box-shadow: 0 6px 15px rgba(145, 70, 255, 0.35);
+    transform: translateY(0);
+    box-shadow: 0 6px 15px rgba(145, 70, 255, 0.35);
+}
+
+/* ===== MENU BURGER (mobile uniquement) ===== */
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+
+    .burger {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2rem 0;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
 }
