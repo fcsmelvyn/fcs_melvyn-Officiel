@@ -1,107 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-  <link rel="stylesheet" href="style/portfolio.css" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-
-<body>
-  <header>
-    <nav>
-      <div class="logo-container">
-        <img src="image/logo.png" alt="Logo fcs_melvyn" class="logo-image" />
-        <div class="logo">fcs_melvyn</div>
-      </div>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="video.html">Vidéos</a></li>
-        <li><a href="rediff.html">Rediffusion Twitch</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="container">
-    <a href="index.html" class="back-button">← Retour à l'accueil</a>
-    <div class="container">
+   <head>
+      <link rel="stylesheet" href="style/portfolio.css" />
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   </head>
+   <body>
+      <header>
+         <nav>
+            <div class="logo-container">
+               <img src="image/logo.png" alt="Logo fcs_melvyn" class="logo-image" />
+               <div class="logo">fcs_melvyn</div>
+            </div>
+            <div class="burger">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+            <ul>
+               <li><a href="index.html">Accueil</a></li>
+               <li><a href="video.html">Vidéos</a></li>
+               <li><a href="portfolio.html">Portfolio</a></li>
+               <li><a href="rediff.html">Rediffusion Twitch</a></li>
+            </ul>
+         </nav>
+      </header>
+      <div class="container">
       <h2>Mon Portfolio</h2>
-
       <p style="text-align: center; font-size: 1.1rem; margin-bottom: 3rem; opacity: 0.9;">
-        Découvrez mes meilleurs photos
+         Découvrez mes meilleurs photos
       </p>
       <div class="gallery-grid">
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <img src="image/logo.png" class="gallery-img" width="100%" height="100%" onclick="openSlider(0)">
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <img src="portfolio/moto.jpeg" class="gallery-img" width="100%" height="100%" onclick="openSlider(1)">
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <img src="portfolio/plage-moto.jpeg" class="gallery-img" width="100%" height="100%" onclick="openSlider(2)">
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <img src="portfolio/setup.jpeg" class="gallery-img" width="100%" height="100%" onclick="openSlider(3)">
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <img src="portfolio/paris.jpeg" class="gallery-img" width="100%" height="100%" onclick="openSlider(4)">
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <img src="portfolio/coop.jpeg" class="gallery-img" width="100%" height="100%" onclick="openSlider(5)">
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <img src="portfolio/palmier.jpeg" class="gallery-img" width="100%" height="100%" onclick="openSlider(6)">
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <img src="portfolio/moto2.jpeg" class="gallery-img" width="100%" height="100%" onclick="openSlider(7)">
-          </div>
-        </div>
+         <div class="gallery-item">
+            <div class="gallery-placeholder">
+               <img src="image/logo.png" class="gallery-img" width="100%" height="100%" onclick="openSlider(0)">
+            </div>
+         </div>
+         <div class="gallery-item">
+            <div class="gallery-placeholder">
+               <img src="portfolio/moto.jpeg" class="gallery-img" width="100%" height="100%" onclick="openSlider(1)">
+            </div>
+         </div>
+         <div class="gallery-item">
+            <div class="gallery-placeholder">
+               <img src="portfolio/plage-moto.jpeg" class="gallery-img" width="100%" height="100%" onclick="openSlider(2)">
+            </div>
+         </div>
+         <div class="gallery-item">
+            <div class="gallery-placeholder">
+               <img src="portfolio/setup.jpeg" class="gallery-img" width="100%" height="100%" onclick="openSlider(3)">
+            </div>
+         </div>
+         <div class="gallery-item">
+            <div class="gallery-placeholder">
+               <img src="portfolio/paris.jpeg" class="gallery-img" width="100%" height="100%" onclick="openSlider(4)">
+            </div>
+         </div>
+         <div class="gallery-item">
+            <div class="gallery-placeholder">
+               <img src="portfolio/plonger.jpeg" class="gallery-img" width="100%" height="100%" onclick="openSlider(5)">
+            </div>
+         </div>
+         <div class="gallery-item">
+            <div class="gallery-placeholder">
+               <span>📷</span>
+               <p>Photo 7</p>
+            </div>
+         </div>
+         <div class="gallery-item">
+            <div class="gallery-placeholder">
+               <span>📷</span>
+               <p>Photo 8</p>
+            </div>
+         </div>
       </div>
       <div id="slider" class="slider">
-  <span class="close" onclick="closeSlider()">✕</span>
-  <span class="prev" onclick="changeSlide(-1)">❮</span>
-  <img id="sliderImg">
-  <span class="next" onclick="changeSlide(1)">❯</span>
-</div>
+         <span class="close" onclick="closeSlider()">✕</span>
+         <span class="prev" onclick="changeSlide(-1)">❮</span>
+         <img id="sliderImg">
+         <span class="next" onclick="changeSlide(1)">❯</span>
+      </div>
       </section>
       <div id="lightbox">
-        <img id="lightbox-img">
+         <img id="lightbox-img">
       </div>
       <script>
-
-        const images = ["image/logo.png", "portfolio/moto.jpeg", "portfolio/plage-moto.jpeg", "portfolio/setup.jpeg", "portfolio/paris.jpeg", "portfolio/coop.jpeg", "portfolio/palmier.jpeg", "portfolio/moto2.jpeg"];
-        let currentIndex = 0;
-
-        function openSlider(index) {
-          currentIndex = index;
-          document.getElementById("slider").style.display = "flex";
-          document.getElementById("sliderImg").src = images[currentIndex];
-        }
-
-        function closeSlider() {
-          document.getElementById("slider").style.display = "none";
-        }
-
-        function changeSlide(direction) {
-          currentIndex = (currentIndex + direction + images.length) % images.length;
-          document.getElementById("sliderImg").src = images[currentIndex];
-        }
+         const images = ["image/logo.png", "portfolio/moto.jpeg", "portfolio/plage-moto.jpeg", "portfolio/setup.jpeg", "portfolio/paris.jpeg", "portfolio/plonger.jpeg"];
+         let currentIndex = 0;
+         
+         function openSlider(index) {
+           currentIndex = index;
+           document.getElementById("slider").style.display = "flex";
+           document.getElementById("sliderImg").src = images[currentIndex];
+         }
+         
+         function closeSlider() {
+           document.getElementById("slider").style.display = "none";
+         }
+         
+         function changeSlide(direction) {
+           currentIndex = (currentIndex + direction + images.length) % images.length;
+           document.getElementById("sliderImg").src = images[currentIndex];
+         }
+         const burger = document.querySelector('.burger');
+         const menu = document.querySelector('nav ul');
+         
+         burger.addEventListener('click', () => {
+           menu.classList.toggle('active');
+         });
       </script>
-</body>
-
+   </body>
 </html>
