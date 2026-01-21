@@ -347,13 +347,18 @@ footer {
 }
 
 .contenu {
-    text-align: center; 
-    font-size: 1.4rem; 
+    text-align: center;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
-    margin-top: 2rem; 
+    margin-top: 2rem;
     opacity: 0.9;
 }
 
+.reseaux {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 2rem
+}
 
 @media (max-width: 768px) {
     .hero h1 {
