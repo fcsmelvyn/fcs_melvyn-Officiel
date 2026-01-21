@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
    <head>
-      <link rel="stylesheet" href="style/style.css" />
-      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="style/portfolio.css" />
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="author" content="Melvyn Lathion" >
-      <title>fcs_melvyn Officiel</title>
+      <title>Mon portfolio - fcs_melvyn Officiel</title>
    </head>
    <body>
       <header>
@@ -29,95 +27,99 @@
             </ul>
          </nav>
       </header>
-      <section class="hero" id="accueil">
-         <div class="hero-content">
-            <h1>fcs_melvyn Officiel</h1>
-            <p>Créateur de contenu • Passionné de jeux vidéo</p>
-            <a href="portfolio.html" class="cta-button">Découvrir mon univers</a>
-         </div>
-      </section>
-      <section id="about">
-         <h2>À propos de moi</h2>
-         <div class="about-content">
-            <div class="about-text">
-               <p>
-                  Bienvenue sur mon site officiel ! Je suis Melvyn, créateur de
-                  contenu passionné par le partage d'expériences authentiques avec ma
-                  communauté.
-               </p>
-               <p style="margin-top: 1rem">
-                  Mon objectif est de créer du contenu inspirant et divertissant qui
-                  résonne avec vous. Chaque jour, je m'efforce de repousser les
-                  limites de la créativité et de partager ma passion avec le monde.
-               </p>
-               <p style="margin-top: 1rem">
-                  Que ce soit à travers la photo, les lives, les vlogs,
-                  je mets tout mon cœur dans chaque projet pour vous offrir
-                  une expérience unique.
-               </p>
+      <section class="container">
+         <h1>Mon Portfolio</h1>
+         <p style="text-align: center; font-size: 1.1rem; margin-bottom: 3rem; opacity: 0.9;">
+            Découvrez mes meilleurs photos
+         </p>
+         <div class="gallery-grid">
+            <div class="gallery-item">
+               <div class="gallery-placeholder">
+                  <img src="image/logo.png" class="gallery-img" width="100%" height="100%" alt="Logo" onclick="openSlider(0)">
+               </div>
+            </div>
+            <div class="gallery-item">
+               <div class="gallery-placeholder">
+                  <img src="portfolio/moto.jpeg" class="gallery-img" width="100%" height="100%" alt="Moto" onclick="openSlider(1)">
+               </div>
+            </div>
+            <div class="gallery-item">
+               <div class="gallery-placeholder">
+                  <img src="portfolio/plage-moto.jpeg" class="gallery-img" width="100%" height="100%" alt="Plage avec moto" onclick="openSlider(2)">
+               </div>
+            </div>
+            <div class="gallery-item">
+               <div class="gallery-placeholder">
+                  <img src="portfolio/setup.jpeg" class="gallery-img" width="100%" height="100%" alt="Setup informatique" onclick="openSlider(3)">
+               </div>
+            </div>
+            <div class="gallery-item">
+               <div class="gallery-placeholder">
+                  <img src="portfolio/paris.jpeg" class="gallery-img" width="100%" height="100%" alt="Paris" onclick="openSlider(4)">
+               </div>
+            </div>
+            <div class="gallery-item">
+               <div class="gallery-placeholder">
+                  <img src="portfolio/plonger.jpeg" class="gallery-img" width="100%" height="100%" alt="Plongée" onclick="openSlider(5)">
+               </div>
+            </div>
+            <div class="gallery-item">
+               <div class="gallery-placeholder">
+                  <img src="portfolio/moto2.jpeg" class="gallery-img" width="100%" height="100%" alt="Deuxième moto" onclick="openSlider(6)">
+               </div>
+            </div>
+            <div class="gallery-item">
+               <div class="gallery-placeholder">
+                  <img src="portfolio/coop.jpeg" class="gallery-img" width="100%" height="100%" alt="Coop" onclick="openSlider(7)">
+               </div>
             </div>
          </div>
-      </section>
-      <section id="services">
-         <h2>Ce que je fais</h2>
-         <div class="portfolio-grid">
-         <div onclick="window.location.href='portfolio.html'" class="portfolio-item">
-            <div class="portfolio-image"><i class='bx bx-image'></i></div>
-            <div class="portfolio-info">
-               <h3>Portfolio</h3>
-               <p>Captures uniques et moments authentiques</p>
-            </div>
-         </div>
-         <div onclick="window.location.href='video.html'" class="portfolio-item">
-            <div class="portfolio-image"><i class='bx bxl-youtube'></i></div>
-            <div class="portfolio-info">
-               <h3>Vidéos Youtube</h3>
-               <p>Contenus créatifs et divertissants</p>
-            </div>
-         </div>
-         <div onclick="window.location.href='rediff.html'" class="portfolio-item">
-            <div class="portfolio-image"><i class='bx bxl-twitch'></i></div>
-            <div class="portfolio-info">
-               <h3>Rediffusions Twitch</h3>
-               <p>Retrouve mes derniers lives et rediffusions</p>
-            </div>
+         <div id="slider" class="slider">
+            <span class="close" onclick="closeSlider()">✕</span>
+            <span class="prev" onclick="changeSlide(-1)">❮</span>
+            <img id="sliderImg" alt="Image du slider">
+            <span class="next" onclick="changeSlide(1)">❯</span>
          </div>
       </section>
-      <div class="contenu" >
-         <p>Découvrez mes contenus uniques et suivez-moi !</p>
-      </div>
-      <section id="contact">
-         <h2>Restons connectés</h2>
-         <div class="reseaux">
-            <p>Suivez-moi sur mes réseaux sociaux pour ne rien manquer !</p>
-         </div>
-         <div class="social-links">
-            <a href="https://www.tiktok.com/@fcs_melvyn" target="_blank" class="social-link">
-            <i class='bx bxl-tiktok'></i>
-            </a>
-            <a href="https://www.instagram.com/fcs_melvyn/" target="_blank" class="social-link">
-            <i class='bx bxl-instagram'></i>
-            </a>
-            <a href="https://www.twitch.tv/fcs_melvyn" target="_blank" class="social-link">
-            <i class='bx bxl-twitch'></i>
-            </a>
-            <a href="https://www.youtube.com/@fcs_melvyn" target="_blank" class="social-link">
-            <i class='bx bxl-youtube'></i>
-            </a>
-         </div>
-      </section>
+      <script>
+         const images = [
+            "image/logo.png",
+            "portfolio/moto.jpeg",
+            "portfolio/plage-moto.jpeg",
+            "portfolio/setup.jpeg",
+            "portfolio/paris.jpeg",
+            "portfolio/plonger.jpeg",
+            "portfolio/moto2.jpeg",
+            "portfolio/coop.jpeg"
+         ];
+         let currentIndex = 0;
+         
+         function openSlider(index) {
+            currentIndex = index;
+            document.getElementById("slider").style.display = "flex";
+            document.getElementById("sliderImg").src = images[currentIndex];
+         }
+         
+         function closeSlider() {
+            document.getElementById("slider").style.display = "none";
+         }
+         
+         function changeSlide(direction) {
+            currentIndex = (currentIndex + direction + images.length) % images.length;
+            document.getElementById("sliderImg").src = images[currentIndex];
+         }
+         
+         const burger = document.querySelector('.burger');
+         const menu = document.querySelector('nav ul');
+         
+         burger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+         });
+      </script>
       <footer>
          <p class="footer-copyright">
             © 2026 fcs_melvyn Officiel. Tous droits réservés.
          </p>
       </footer>
-      <script>
-         const burger = document.querySelector('.burger');
-         const menu = document.querySelector('nav ul');
-         
-         burger.addEventListener('click', () => {
-           menu.classList.toggle('active');
-         });
-      </script>
    </body>
 </html>
