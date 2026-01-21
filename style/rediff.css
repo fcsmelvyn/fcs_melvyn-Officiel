@@ -1,22 +1,3 @@
-.back-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 0.8rem 1.5rem;
-    border-radius: 50px;
-    text-decoration: none;
-    color: #fff;
-    transition: all 0.3s;
-    margin-bottom: 2rem;
-}
-
-.back-button:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateX(-5px);
-}
-
 nav {
     max-width: 1200px;
     margin: 0 auto;
@@ -24,6 +5,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+}
+
+main {
+    padding-top: calc(var(--header-height) + 2rem);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
 }
 
 .logo {
@@ -136,14 +124,17 @@ nav a:hover {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 5rem 2rem 3rem 2rem;
+    padding-top: calc(var(--header-height) + 2rem);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
 }
 
 h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 0;
 }
 
 .subtitle {
@@ -299,6 +290,22 @@ h1 {
     height: 3px;
     background: white;
     border-radius: 2px;
+}
+
+.footer-copyright {
+    background: none;
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
 }
 
 /* MOBILE */
